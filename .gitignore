@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+example/node_modules/
+
+# Expo
+.expo/
+example/.expo/
+example/dist/
+
+# Build artifacts
+dist/
+lib/
+
+# Local env files
+.env*.local
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
