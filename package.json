@@ -1,5 +1,5 @@
 {
-  "name": "react-native-feedback-board",
+  "name": "rnfeedbackwidget",
   "version": "1.0.0",
   "description": "A React Native feedback widget with a built-in feedback board.",
   "main": "dist/index.js",
@@ -9,18 +9,24 @@
     "dist",
     "src"
   ],
+  "scripts": {
+    "build": "npx tsc",
+    "prepare": "npm run build",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx"
+  },
   "peerDependencies": {
+    "@react-native-async-storage/async-storage": "*",
     "react": "*",
-    "react-native": "*",
-    "@react-native-async-storage/async-storage": "*"
+    "react-native": "*"
   },
   "devDependencies": {
-    "@types/react": "^18.0.0",
+    "@react-native-async-storage/async-storage": "^1.18.2",
+    "@types/react": "^19.0.0",
     "@types/react-native": "^0.72.0",
-    "typescript": "^5.0.0",
-    "react": "18.2.0",
-    "react-native": "0.72.3",
-    "@react-native-async-storage/async-storage": "^1.18.2"
+    "eslint": "^9.0.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "typescript": "^5.9.3"
   },
   "keywords": [
     "react-native",
@@ -28,6 +34,14 @@
     "widget",
     "board"
   ],
-  "author": "",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vantholpich/RNFeedbackWidget.git"
+  },
+  "author": "Vanthol Pich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vantholpich/RNFeedbackWidget/issues"
+  },
+  "homepage": "https://github.com/vantholpich/RNFeedbackWidget#readme"
 }
